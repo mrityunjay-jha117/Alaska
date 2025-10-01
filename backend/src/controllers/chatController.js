@@ -145,7 +145,6 @@ export const updateChat = async (req, res) => {
         },
       },
     });
-
     res.status(200).json({ success: true, data: chat });
   } catch (error) {
     if (error.code === "P2025") {
